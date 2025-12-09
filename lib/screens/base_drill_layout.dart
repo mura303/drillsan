@@ -19,6 +19,8 @@ abstract class BaseDrillLayoutState<T extends BaseDrillLayout> extends State<T> 
 
   void onNumberPressed(String number) {
     setState(() {
+      // Limit answer length to 6 digits to handle large multiplication results
+      // and prevent display overflow in the UI
       if (userAnswer.length < 6) {
         userAnswer += number;
       }

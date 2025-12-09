@@ -409,7 +409,7 @@ class _Layout5WithProgressState extends BaseDrillLayoutState<Layout5WithProgress
           ),
           const SizedBox(height: 16),
           Text(
-            'Problem 3 of 10',
+            'Example Problem', // In a real app, this would be dynamic based on problem count
             style: TextStyle(fontSize: 16, color: Colors.teal.shade700),
           ),
           const Spacer(),
