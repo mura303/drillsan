@@ -31505,7 +31505,7 @@ p=A.a9r("Flutter Demo Home Page",r)
 s=A.xu(A.afi(A.d([B.JH,A.a9r(""+this.d,A.aH(a).ok.e)],t.nA),B.oH),r,r)
 return new A.rY(new A.oE(p,q,new A.G2(r,r,1/0,56),r),s,new A.yL(B.yH,"Increment",this.gPJ(),B.KU,r),r)}}
 A.a_P.prototype={
-$0(){++this.a.d},
+$0(){this.a.d+=3},
 $S:0}
 A.fp.prototype={
 F(){return"AnimationStatus."+this.b},
