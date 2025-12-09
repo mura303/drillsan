@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/layout_selector_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,11 +8,10 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: '算数ドリルさん',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -117,6 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
+      home: const LayoutSelectorScreen(),
     );
   }
 }
