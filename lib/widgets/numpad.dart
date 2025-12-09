@@ -45,33 +45,41 @@ class NumPad extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(
-          children: [
-            _buildButton('7', () => onNumberPressed('7')),
-            _buildButton('8', () => onNumberPressed('8')),
-            _buildButton('9', () => onNumberPressed('9')),
-          ],
+        Expanded(
+          child: Row(
+            children: [
+              _buildButton('7', () => onNumberPressed('7')),
+              _buildButton('8', () => onNumberPressed('8')),
+              _buildButton('9', () => onNumberPressed('9')),
+            ],
+          ),
         ),
-        Row(
-          children: [
-            _buildButton('4', () => onNumberPressed('4')),
-            _buildButton('5', () => onNumberPressed('5')),
-            _buildButton('6', () => onNumberPressed('6')),
-          ],
+        Expanded(
+          child: Row(
+            children: [
+              _buildButton('4', () => onNumberPressed('4')),
+              _buildButton('5', () => onNumberPressed('5')),
+              _buildButton('6', () => onNumberPressed('6')),
+            ],
+          ),
         ),
-        Row(
-          children: [
-            _buildButton('1', () => onNumberPressed('1')),
-            _buildButton('2', () => onNumberPressed('2')),
-            _buildButton('3', () => onNumberPressed('3')),
-          ],
+        Expanded(
+          child: Row(
+            children: [
+              _buildButton('1', () => onNumberPressed('1')),
+              _buildButton('2', () => onNumberPressed('2')),
+              _buildButton('3', () => onNumberPressed('3')),
+            ],
+          ),
         ),
-        Row(
-          children: [
-            _buildButton('C', onClear, isSpecial: true),
-            _buildButton('0', () => onNumberPressed('0')),
-            _buildButton('OK', onSubmit, isSpecial: true),
-          ],
+        Expanded(
+          child: Row(
+            children: [
+              _buildButton('C', onClear, isSpecial: true),
+              _buildButton('0', () => onNumberPressed('0')),
+              _buildButton('OK', onSubmit, isSpecial: true),
+            ],
+          ),
         ),
       ],
     );

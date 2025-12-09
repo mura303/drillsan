@@ -77,7 +77,9 @@ class _Layout1ClassicCenteredState extends BaseDrillLayoutState<Layout1ClassicCe
             flex: 1,
             child: buildProblemDisplay(),
           ),
-          buildNumPadSection(),
+          Expanded(
+            child: buildNumPadSection(),
+          ),
         ],
       ),
     );
@@ -171,7 +173,9 @@ class _Layout2SplitHorizontalState extends BaseDrillLayoutState<Layout2SplitHori
             flex: 2,
             child: buildProblemDisplay(),
           ),
-          buildNumPadSection(),
+          Expanded(
+            child: buildNumPadSection(),
+          ),
         ],
       ),
     );
@@ -287,7 +291,9 @@ class _Layout3LargeHeaderState extends BaseDrillLayoutState<Layout3LargeHeader> 
             flex: 3,
             child: buildProblemDisplay(),
           ),
-          buildNumPadSection(),
+          Expanded(
+            child: buildNumPadSection(),
+          ),
         ],
       ),
     );
@@ -485,7 +491,9 @@ class _Layout5WithProgressState extends BaseDrillLayoutState<Layout5WithProgress
             flex: 2,
             child: buildProblemDisplay(),
           ),
-          buildNumPadSection(),
+          Expanded(
+            child: buildNumPadSection(),
+          ),
         ],
       ),
     );
